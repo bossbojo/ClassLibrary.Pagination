@@ -10,8 +10,8 @@ namespace ClassLibrary.Pagination.MultipleResultStoreProc
 {
     public partial class DbContextProc : DbContext
     {
-        public DbContextProc(string name)
-          : base("name="+ name)
+        public DbContextProc(string ConnectionString)
+          : base(ConnectionString)
         {
         }
         public virtual DbSet<TableA> TableA { get; set; }
